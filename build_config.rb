@@ -25,7 +25,7 @@ MRuby::CrossBuild.new('iphonesimulator') do |conf|
     linker.flags = %W(-sdk iphonesimulator clang -fembed-bitcode-marker)
   end
 
-  conf.bins = []
+  conf.bins = ['mruby.dylib']
   conf.gembox 'cinderella'
 end
 
@@ -41,6 +41,6 @@ MRuby::CrossBuild.new('iphoneos') do |conf|
     linker.flags = %W(-sdk iphoneos clang -arch arm64 -fembed-bitcode-marker)
   end
 
-  conf.bins = []
+  conf.bins = ['mruby.dylib']
   conf.gembox 'cinderella'
 end
