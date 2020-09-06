@@ -103,6 +103,7 @@ MRuby::GemBox.new do |conf|
   conf.gem :github => 'matsumoto-r/mruby-sleep'
   conf.gem :github => 'mattn/mruby-json'
   conf.gem :github => 'mattn/mruby-thread'
+  conf.gem :github => 'mattn/mruby-sharedlib'
   conf.gem :github => 'iij/mruby-regexp-pcre'
   conf.gem :github => 'iij/mruby-require'
   conf.gem :github => 'iij/mruby-dir'
